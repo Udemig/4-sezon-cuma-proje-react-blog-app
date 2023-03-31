@@ -28,9 +28,6 @@ const Header = () => {
           <li>
             <a href="./html/about.html">Hakkımda</a>
           </li>
-          <li>
-            <a href="#">Tüm Yazılar</a>
-          </li>
           {!loginState.success ? (
             <li>
               <Link to={"/login"}>Login</Link>

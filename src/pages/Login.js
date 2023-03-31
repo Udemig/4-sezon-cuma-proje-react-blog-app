@@ -33,14 +33,14 @@ const Login = () => {
     /* login başarılı */
     dispatch({
       type: actionTypes.loginActions.LOGIN_SUCCESS,
-      payload: { username: hasUser.username, role: hasUser.role },
+      payload: { username: hasUser.username, role: hasUser.role,userId:hasUser.id },
     });
     const successLoginState = {
       pending: false,
       success: true,
       error: false,
       errorMessage: "",
-      user: { username: hasUser.username, role: hasUser.role },
+      user: { username: hasUser.username, role: hasUser.role,userId:hasUser.id },
     };
     localStorage.setItem("loginState",JSON.stringify(successLoginState))
     navigate("/");

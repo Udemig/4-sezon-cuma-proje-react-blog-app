@@ -9,6 +9,8 @@ import Home from "./pages/Home";
 import AdminHome from "./pages/AdminHome";
 import Login from "./pages/Login";
 import Error from "./pages/Error";
+import AddBlog from "./pages/AddBlog";
+import BlogDetail from "./pages/BlogDetail";
 
 /* api stuff */
 import api from "./api/api";
@@ -112,6 +114,8 @@ function App() {
 
         <Route path="/admin" element={<AdminHome />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/admin/add-blog" element={<AddBlog />} />
+        <Route path="/blog/:blogId" element={<BlogDetail />} />
       </Routes>
     </BrowserRouter>
   );
